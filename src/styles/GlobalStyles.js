@@ -20,6 +20,10 @@ const GlobalStyles = createGlobalStyle`
         --lightBlue_2: #ADBDE3;
         --white: #FFFFFF;
         --black: #000000;
+
+        /* Others */
+
+        --header-height: 50px;
     }
 
     html{
@@ -31,16 +35,16 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Poppins', sans-serif;
     }
 
-    *, *::after, *::before{
+    *, *:after, *:before{
         margin:0;
         padding:0;
         box-sizing: border-box;
     }
     a{
         text-decoration: none;
-        cursor:pointer;
+        cursor: pointer;
     }
-    ul,li{
+    ul, li{
         list-style:none;
     }
 
