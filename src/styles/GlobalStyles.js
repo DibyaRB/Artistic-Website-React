@@ -7,6 +7,7 @@ import '@fontsource/poppins/500.css';
 import '@fontsource/poppins/600.css';
 import '@fontsource/poppins/700.css';
 import '@fontsource/poppins/800.css';
+import themeList from '../data/themeList';
 
 const GlobalStyles = createGlobalStyle`
     :root{
@@ -31,7 +32,10 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body{
-        background-color: var(--lightBlue_1);
+        background-color: ${({ theme: { theme } }) =>
+          theme === themeList.light
+            ? 'var(--lightBlue_1)'
+            : 'var(--darkBlue_3)'};
         font-family: 'Poppins', sans-serif;
     }
 
